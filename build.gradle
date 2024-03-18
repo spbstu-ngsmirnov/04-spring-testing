@@ -36,9 +36,9 @@ test {
 }
 
 def jacocoExcluded = [
-	"org/example/shortener/model/*",
-	"org/example/shortener/messages/*",
-	"org/example/shortener/ShortenerApplication*",
+	"com/example/shortener/model/*",
+	"com/example/shortener/messages/*",
+	"com/example/shortener/ShortenerApplication*",
 ]
 
 jacocoTestReport {
