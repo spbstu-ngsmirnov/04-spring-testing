@@ -32,6 +32,6 @@
 Требования:
 1. Напишите модульные тесты как минимум на RandomKeyGen;
 2. Напишите интеграционные тесты на `CreateRedirectController`, `RedirectController`, `AdminController`;
-3. Используйте Mockito для исключения внешнего сетевого вызова из `UrlValidator` в тестовых сценариях.
-4. При обнаружении ошибок, зафиксируйте их в отчете о тестировании ().
+3. Используйте Mockito для исключения внешнего сетевого вызова из `UrlValidator` в тестовых сценариях. См. [Mockito в Spring](https://www.baeldung.com/java-spring-mockito-mock-mockbean) и [Подробнее о Mockito](https://habr.com/ru/articles/444982/)
+4. При обнаружении ошибок, зафиксируйте их в отчете о тестировании в разделе Issues->[New issue](./issues/new)
 5. Исправьте обнаруженные ошибки и добейтесь "зеленых" тестов.

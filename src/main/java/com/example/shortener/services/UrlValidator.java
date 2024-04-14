@@ -15,7 +15,7 @@ import java.time.Duration;
 @Service
 public class UrlValidator {
 
-    String validateAndGetError(String url) {
+    public String validateAndGetError(String url) {
         HttpClient client = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(10))
                 .build();
@@ -28,7 +28,7 @@ public class UrlValidator {
             if (responseCode >= HttpServletResponse.SC_BAD_REQUEST) {
                 return String.format("invalid response http code %d from url %s",responseCode, url);
             }
-        } catch (IOException | URISyntaxException | InterruptedException e) {
+        } catch (IOException | URISyntaxException | InterruptedException| IllegalArgumentException e) {
             return String.format("error occurred %s while sending request to %s", e, url);
         }
 
