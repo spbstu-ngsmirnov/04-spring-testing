@@ -30,4 +30,4 @@ build
 lib
 
 # h2 db file
-redirections_db.mv.db
+*.db

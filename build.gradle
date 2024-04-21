@@ -31,6 +31,10 @@ jacoco {
 }
 
 test {
+	reports {
+		html.enabled true
+		html.destination file("${buildDir}/jacoco/jacocoHtml")
+	}
 	finalizedBy jacocoTestReport // report is always generated after tests run
 	finalizedBy jacocoTestCoverageVerification
 }
